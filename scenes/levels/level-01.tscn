@@ -1,0 +1,31 @@
+[gd_scene format=4 uid="uid://cuqr6mknaidr4"]
+
+[ext_resource type="PackedScene" uid="uid://mtb3m6j6ilk1" path="res://scenes/player/player.tscn" id="3_w44ue"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_701hk"]
+size = Vector2(168, 48)
+
+[node name="Level01" type="Node2D" unique_id=1900646980]
+
+[node name="Background" type="TileMapLayer" parent="." unique_id=268141037]
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAIAAAABAAEAAAABAAEAAAACAAEAAAACAAEAAAADAAEAAAADAAEAAAAEAAEAAAACAAEAAAAAAAIAAAABAAMAAAABAAIAAAABAAMAAAACAAIAAAABAAMAAAADAAIAAAABAAMAAAAEAAIAAAABAAMAAAA=")
+
+[node name="PlayerSpawn" type="Marker2D" parent="." unique_id=1386412714]
+position = Vector2(560, 336)
+
+[node name="Player" parent="PlayerSpawn" unique_id=1207979450 instance=ExtResource("3_w44ue")]
+
+[node name="Platforms" type="TileMapLayer" parent="." unique_id=1307873346]
+tile_map_data = PackedByteArray("AAAAAAkAAAACAAoAAAABAAkAAAACAAoAAAD//wkAAAABAAoAAAACAAkAAAACAAoAAAADAAkAAAACAAoAAAAEAAkAAAACAAoAAAAFAAkAAAACAAoAAAAGAAkAAAACAAoAAAAHAAkAAAACAAoAAAAIAAkAAAACAAoAAAAJAAkAAAACAAoAAAAKAAkAAAACAAoAAAALAAkAAAACAAoAAAAMAAkAAAACAAoAAAANAAkAAAACAAoAAAAOAAkAAAACAAoAAAAPAAkAAAACAAoAAAAQAAkAAAACAAoAAAARAAkAAAACAAoAAAASAAkAAAAFAAoAAAA=")
+
+[node name="Platform1" type="ColorRect" parent="." unique_id=1714381772]
+offset_left = 472.0
+offset_top = 448.0
+offset_right = 640.0
+offset_bottom = 496.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platform1" unique_id=242905831]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform1/StaticBody2D" unique_id=1349817192]
+position = Vector2(84, 24)
+shape = SubResource("RectangleShape2D_701hk")

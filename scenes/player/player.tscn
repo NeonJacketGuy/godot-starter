@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://mtb3m6j6ilk1"]
+
+[ext_resource type="Script" uid="uid://hnqq2t5shhtv" path="res://scenes/player/player.gd" id="1_8afob"]
+[ext_resource type="Texture2D" uid="uid://sekkb77ydnas" path="res://icon.svg" id="2_dovo2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gmlin"]
+size = Vector2(126, 127)
+
+[node name="Player" type="CharacterBody2D" unique_id=1207979450 groups=["player"]]
+script = ExtResource("1_8afob")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=181462360]
+texture = ExtResource("2_dovo2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=204977325]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_gmlin")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=564236302]
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=505160413]

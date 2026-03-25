@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://deo4o4ss260tf"]
+
+[ext_resource type="Script" uid="uid://vgeob3jeql45" path="res://scenes/ui/hud.gd" id="1_0mwgc"]
+
+[node name="HUD" type="Control" unique_id=2125829556]
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 3
+size_flags_vertical = 0
+script = ExtResource("1_0mwgc")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=408446704]
+layout_mode = 1
+offset_right = 154.0
+offset_bottom = 50.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=588865496]
+layout_mode = 2
+
+[node name="ScoreLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1613786856]
+layout_mode = 2
+text = "Score: 99999"
+
+[node name="MessageLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1564122071]
+layout_mode = 2
+text = "Some message text will go here"
