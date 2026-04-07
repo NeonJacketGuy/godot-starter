@@ -8,6 +8,7 @@ size = Vector2(126, 127)
 
 [node name="Player" type="CharacterBody2D" unique_id=1207979450 groups=["player"]]
 script = ExtResource("1_8afob")
+jump_velocity = -400.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=181462360]
 texture = ExtResource("2_dovo2")
