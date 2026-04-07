@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://mtb3m6j6ilk1"]
 
 [ext_resource type="Script" uid="uid://hnqq2t5shhtv" path="res://scenes/player/player.gd" id="1_8afob"]
-[ext_resource type="Texture2D" uid="uid://sekkb77ydnas" path="res://icon.svg" id="2_dovo2"]
+[ext_resource type="Texture2D" uid="uid://cjhu0h5pxfcl4" path="res://assets/art/player-(first-art).png" id="2_dovo2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gmlin"]
-size = Vector2(126, 127)
+size = Vector2(62.5, 61)
 
 [node name="Player" type="CharacterBody2D" unique_id=1207979450 groups=["player"]]
 script = ExtResource("1_8afob")
@@ -14,9 +14,10 @@ jump_velocity = -400.0
 texture = ExtResource("2_dovo2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=204977325]
-position = Vector2(0, 0.5)
+position = Vector2(-0.25, 1.5)
 shape = SubResource("RectangleShape2D_gmlin")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=564236302]
+offset = Vector2(0, -170)
 
 [node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=505160413]
