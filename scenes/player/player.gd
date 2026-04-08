@@ -15,3 +15,12 @@ func _physics_process(delta: float) -> void:
 		velocity.y = jump_velocity
 
 	move_and_slide()
+	
+func set_camera_boundaries(top: Vector2, right: Vector2, bottom: Vector2, left: Vector2) -> void:
+	var camera := %Camera2D
+	
+	camera.limit_bottom = bottom.y
+	camera.limit_left = left.x
+	camera.limit_top = top.y
+	camera.limit_right = right.x
+	

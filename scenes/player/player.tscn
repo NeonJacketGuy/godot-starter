@@ -17,7 +17,7 @@ texture = ExtResource("2_dovo2")
 position = Vector2(-0.25, 1.5)
 shape = SubResource("RectangleShape2D_gmlin")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=564236302]
-offset = Vector2(0, -170)
+[node name="Camera2D" type="Camera2D" parent="." unique_id=5492337]
+unique_name_in_owner = true
 
 [node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=505160413]
