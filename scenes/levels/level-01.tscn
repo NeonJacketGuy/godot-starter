@@ -178,9 +178,10 @@ tile_map_data = PackedByteArray("AAAEAAYAAAALAAkAAAAEAAcAAAAIAAkAAAAMAAcAAAAIAAk
 tile_set = SubResource("TileSet_h6en2")
 
 [node name="PlayerSpawn" type="Marker2D" parent="." unique_id=1386412714]
-position = Vector2(-361, -199)
+position = Vector2(5, -2)
 
 [node name="Player" parent="PlayerSpawn" unique_id=1207979450 instance=ExtResource("3_w44ue")]
+position = Vector2(4, 3)
 move_speed = 500.0
 
 [node name="WorldBoundary" type="StaticBody2D" parent="." unique_id=178188815]
@@ -189,7 +190,7 @@ move_speed = 500.0
 position = Vector2(0, -406)
 shape = SubResource("WorldBoundaryShape2D_l0wqo")
 
-[node name="Right" type="CollisionShape2D" parent="WorldBoundary" unique_id=1329130394]
+[node name="Left" type="CollisionShape2D" parent="WorldBoundary" unique_id=1329130394]
 position = Vector2(-1721, 0)
 shape = SubResource("WorldBoundaryShape2D_h6en2")
 
@@ -197,6 +198,6 @@ shape = SubResource("WorldBoundaryShape2D_h6en2")
 position = Vector2(0, 1011)
 shape = SubResource("WorldBoundaryShape2D_5yx1i")
 
-[node name="Left" type="CollisionShape2D" parent="WorldBoundary" unique_id=432636673]
+[node name="Right" type="CollisionShape2D" parent="WorldBoundary" unique_id=432636673]
 position = Vector2(9565, 0)
 shape = SubResource("WorldBoundaryShape2D_g0s3f")
