@@ -19,5 +19,6 @@ shape = SubResource("RectangleShape2D_gmlin")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=5492337]
 unique_name_in_owner = true
+zoom = Vector2(1.8, 1.8)
 
 [node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=505160413]
