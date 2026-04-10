@@ -214,6 +214,7 @@ position = Vector2(496, 286)
 [node name="Player" parent="PlayerSpawn" unique_id=1207979450 node_paths=PackedStringArray("world_bounds_top", "world_bounds_right", "world_bounds_bottom", "world_bounds_left") instance=ExtResource("3_w44ue")]
 position = Vector2(4, 3)
 move_speed = 500.0
+gravity = null
 world_bounds_top = NodePath("../../WorldBoundary/Top")
 world_bounds_right = NodePath("../../WorldBoundary/Right")
 world_bounds_bottom = NodePath("../../WorldBoundary/Bottom")

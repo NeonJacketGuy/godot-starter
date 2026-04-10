@@ -14,9 +14,9 @@ extends CharacterBody2D
 	#
 	##Activate movment
 	#if velocity.length() > 0:
-		#_animated_sprite.play("Idle")
-		#_animated_sprite.play("")
-		
+		#_animated_sprite.play("walk")
+		#_animated_sprite.play("idle")
+		#
 
 
 @export var move_speed := 220.0

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://hnqq2t5shhtv" path="res://scenes/player/player.gd" id="1_8afob"]
 [ext_resource type="Texture2D" uid="uid://cjhu0h5pxfcl4" path="res://assets/art/player-(first-art).png" id="2_dovo2"]
+[ext_resource type="SpriteFrames" uid="uid://cmth6bf4rgk6o" path="res://assets/art/Animations/new_sprite_frames.tres" id="3_gmlin"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gmlin"]
 size = Vector2(62.5, 61)
@@ -14,7 +15,7 @@ jump_velocity = -400.0
 position = Vector2(-0.25, 1.5)
 shape = SubResource("RectangleShape2D_gmlin")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1791983925]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=992480514]
 texture = ExtResource("2_dovo2")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=5492337]
@@ -22,3 +23,7 @@ unique_name_in_owner = true
 zoom = Vector2(1.8, 1.8)
 
 [node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=505160413]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2042023718]
+sprite_frames = ExtResource("3_gmlin")
+animation = &"idle"
