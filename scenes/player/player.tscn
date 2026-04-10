@@ -10,12 +10,12 @@ size = Vector2(62.5, 61)
 script = ExtResource("1_8afob")
 jump_velocity = -400.0
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=181462360]
-texture = ExtResource("2_dovo2")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=204977325]
 position = Vector2(-0.25, 1.5)
 shape = SubResource("RectangleShape2D_gmlin")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1791983925]
+texture = ExtResource("2_dovo2")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=5492337]
 unique_name_in_owner = true

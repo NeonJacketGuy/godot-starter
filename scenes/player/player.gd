@@ -1,5 +1,24 @@
 extends CharacterBody2D
 
+#@onready var _animated_sprite = $AnimatedSprite2D
+#
+#func _physics_process(_delta):
+	##1: Get Imput and Move
+	#var direction = Input.get_axis("move_right," "move_left")
+	#if direction:
+		#velocity.x = direction * 100
+	#else:
+		#velocity.x = move_toward(velocity.x, 0, 10)
+		#
+	#move_and_slide()
+	#
+	##Activate movment
+	#if velocity.length() > 0:
+		#_animated_sprite.play("Idle")
+		#_animated_sprite.play("")
+		
+
+
 @export var move_speed := 220.0
 @export var jump_velocity := -350.0
 @export var gravity := 900.0

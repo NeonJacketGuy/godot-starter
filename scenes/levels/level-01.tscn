@@ -180,6 +180,7 @@ normal = Vector2(1, 0)
 normal = Vector2(-1, 0)
 
 [node name="Level01" type="Node2D" unique_id=1900646980]
+position = Vector2(2, 1)
 script = ExtResource("1_h6en2")
 
 [node name="Background" type="TileMapLayer" parent="." unique_id=1221921837]
