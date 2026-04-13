@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8jqwi618mht2"
-path="res://.godot/imported/Blob Walk Right 4.png-7ab3b27fbba491559d4e354693ca8f77.ctex"
+uid="uid://bmhiaw007xi2k"
+path="res://.godot/imported/DADS Easter Egg.png-2d510f5c0e1b7e4570ef5b09a8e842f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/Animations/Walk Right/Blob Walk Right 4.png"
-dest_files=["res://.godot/imported/Blob Walk Right 4.png-7ab3b27fbba491559d4e354693ca8f77.ctex"]
+source_file="res://assets/art/easterEggs/DADS Easter Egg.png"
+dest_files=["res://.godot/imported/DADS Easter Egg.png-2d510f5c0e1b7e4570ef5b09a8e842f1.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b81jun86idh5c"
-path="res://.godot/imported/Blob Walk Left 3.png-3eba48e3da9d0106b5d55f5d5d3dbca3.ctex"
+uid="uid://cjhu0h5pxfcl4"
+path="res://.godot/imported/player-(first-art).png-f00c4bb0e7109d3852df38a3148fc88b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/Animations/Walk Left/Blob Walk Left 3.png"
-dest_files=["res://.godot/imported/Blob Walk Left 3.png-3eba48e3da9d0106b5d55f5d5d3dbca3.ctex"]
+source_file="res://assets/art/player/player-(first-art).png"
+dest_files=["res://.godot/imported/player-(first-art).png-f00c4bb0e7109d3852df38a3148fc88b.ctex"]
 
 [params]
 

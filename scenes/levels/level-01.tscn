@@ -3,9 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://c1lsyl6hdwcwc" path="res://assets/art/backgrounds-spritesheet.png" id="1_43mrd"]
 [ext_resource type="Script" uid="uid://bx5p65j4skc2u" path="res://scenes/levels/level_01.gd" id="1_h6en2"]
 [ext_resource type="Texture2D" uid="uid://uume5mhmdr3q" path="res://assets/art/tiles-spritesheet.png" id="3_1j0ho"]
-[ext_resource type="Texture2D" uid="uid://bmhiaw007xi2k" path="res://assets/art/Easter Eggs/DADS Easter Egg.png" id="3_l0wqo"]
+[ext_resource type="Texture2D" uid="uid://bmhiaw007xi2k" path="res://assets/art/easterEggs/DADS Easter Egg.png" id="3_l0wqo"]
 [ext_resource type="PackedScene" uid="uid://mtb3m6j6ilk1" path="res://scenes/player/player.tscn" id="3_w44ue"]
-[ext_resource type="Texture2D" uid="uid://b4xfilnlmcymi" path="res://assets/art/Easter Eggs/EasterEgg.png" id="4_1j0ho"]
+[ext_resource type="Texture2D" uid="uid://b4xfilnlmcymi" path="res://assets/art/easterEggs/EasterEgg.png" id="4_1j0ho"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w44ue"]
 texture = ExtResource("1_43mrd")
