@@ -281,7 +281,7 @@ graph_offset = Vector2(-9.888783e-06, -71.67754)
 
 [node name="Player" type="CharacterBody2D" unique_id=1207979450 groups=["player"]]
 script = ExtResource("1_8afob")
-jump_velocity = -400.0
+jump_velocity = -600.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=865513739]
 texture = ExtResource("2_dovo2")
