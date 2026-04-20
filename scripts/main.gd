@@ -6,6 +6,21 @@ var coins_total := 0
 @onready var hud = $UILayer/HUD
 
 func _ready() -> void:
+	reset_scene()
+
+func _on_coin_collected() -> void:
+	score += 1
+	hud.set_score(score)
+
+	if score >= coins_total:
+		hud.show_message("You win!")
+		
+		#we need to get the curant level
+		#get the next level resorce and load it/validate
+		#we need to queue_free current level
+		#we need a new level instance in LevelHolder
+		
+func reset_scene() -> void:
 	var coins = get_tree().get_nodes_in_group("coins")
 	coins_total = coins.size()
 
@@ -14,10 +29,4 @@ func _ready() -> void:
 
 	hud.set_score(score)
 	hud.show_message("Collect all the coins!")
-
-func _on_coin_collected() -> void:
-	score += 1
-	hud.set_score(score)
-
-	if score >= coins_total:
-		hud.show_message("You win!")
+		
