@@ -4,7 +4,7 @@ extends BaseLevel
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	next_level = "res://scenes/levels/level-02.tscn"
+	next_level = "uid://h7st67rvs6ph" #LevelTwo 
 	
 	player.set_camera_boundaries(
 		$WorldBoundary/Top.position,
