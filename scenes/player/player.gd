@@ -2,13 +2,22 @@ class_name Player
 extends CharacterBody2D
 
 @export var move_speed := 220.0
-@export var jump_velocity := -350.0
+@export var jump_velocity := -600.0
 @export var gravity := 900.0
 
 @export var world_bounds_top:CollisionShape2D
 @export var world_bounds_right:CollisionShape2D
 @export var world_bounds_bottom:CollisionShape2D
 @export var world_bounds_left:CollisionShape2D
+
+enum PlayerStates {
+	IDLE,
+	WALKING,
+	FALLING,
+	JUMPING,
+}
+
+var current_state: PlayerStates = PlayerStates.IDLE
 
 func _ready():
 	set_camera_limits()
@@ -22,7 +31,11 @@ func _physics_process(delta: float) -> void:
 
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump_velocity
-
+	
+	if not is_on_floor():
+		current_state = PlayerStates.FALLING if velocity.y >= 0 else PlayerStates.JUMPING
+		
+	
 	move_and_slide()
 	
 func set_camera_boundaries(top: Vector2, right: Vector2, bottom: Vector2, left: Vector2) -> void:
