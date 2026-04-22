@@ -18,7 +18,7 @@ func _on_coin_collected() -> void:
 		
 		
 func load_next_level() -> void:
-		#we need to get the curant level
+	score = 0
 	var current_level = $%LevelHolder.get_child(0)
 	if current_level == null:
 		#how did we get to this lowly state?
@@ -30,13 +30,16 @@ func load_next_level() -> void:
 	
 	
 	if next_level_path != null:
-		pass
+		var next_level = load(next_level_path)
+		var level = next_level.instantiate()
 		
-		#get the next level resorce and load it/validate
-		#we need to queue_free current level
-		#we need a new level instance in LevelHolder
-		
-		
+		if level is BaseLevel:
+			current_level.queue_free()
+			%LevelHolder.add_child(level)
+			reset_level()
+			%ScreenFade.faded_in()
+
+
 func reset_level() -> void:
 	var coins = get_tree().get_nodes_in_group("coins")
 	coins_total = coins.size()
