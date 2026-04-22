@@ -33,8 +33,11 @@ func _physics_process(delta: float) -> void:
 		velocity.y = jump_velocity
 	
 	if not is_on_floor():
-		current_state = PlayerStates.FALLING if velocity.y >= 0 else PlayerStates.JUMPING
-		
+		current_state = PlayerStates.FALLING if velocity.y > 0 else PlayerStates.JUMPING
+	elif velocity.x != 0:
+		current_state = PlayerStates.WALKING
+	else:
+		current_state = PlayerStates.IDLE
 	
 	move_and_slide()
 	
