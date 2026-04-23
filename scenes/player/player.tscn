@@ -363,16 +363,16 @@ advance_condition = &"Jumping"
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_h17s1"]
 states/Falling/node = SubResource("AnimationNodeBlendSpace1D_5gtgg")
-states/Falling/position = Vector2(411.10565, 281.38)
+states/Falling/position = Vector2(378.10565, 315.38)
 states/Idle/node = SubResource("AnimationNodeBlendSpace1D_p47bc")
 states/Idle/position = Vector2(393.5, 117.25)
 states/Jumping/node = SubResource("AnimationNodeBlendSpace1D_h17s1")
-states/Jumping/position = Vector2(581.91327, 140.9326)
+states/Jumping/position = Vector2(580.41327, 210.9326)
 states/Start/position = Vector2(197.5, 100.5)
 states/Walking/node = SubResource("AnimationNodeBlendSpace1D_qek5x")
-states/Walking/position = Vector2(167.20514, 226.08377)
+states/Walking/position = Vector2(175.20514, 216.75818)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_5gtgg"), "Idle", "Walking", SubResource("AnimationNodeStateMachineTransition_je7p5"), "Walking", "Idle", SubResource("AnimationNodeStateMachineTransition_fm80t"), "Walking", "Falling", SubResource("AnimationNodeStateMachineTransition_gmlin"), "Falling", "Walking", SubResource("AnimationNodeStateMachineTransition_lvxji"), "Falling", "Idle", SubResource("AnimationNodeStateMachineTransition_p47bc"), "Idle", "Jumping", SubResource("AnimationNodeStateMachineTransition_75vfm"), "Jumping", "Falling", SubResource("AnimationNodeStateMachineTransition_0owmy"), "Walking", "Jumping", SubResource("AnimationNodeStateMachineTransition_qek5x")]
-graph_offset = Vector2(-30.79481, 61.740112)
+graph_offset = Vector2(-65.714806, 80.60261)
 
 [node name="Player" type="CharacterBody2D" unique_id=1207979450 groups=["player"]]
 script = ExtResource("1_8afob")
@@ -408,5 +408,6 @@ parameters/Idle/blend_position = 0.0
 parameters/Jumping/blend_position = 0.0
 parameters/Walking/blend_position = 0.0
 
-[node name="PlayerAnimations" type="Node2D" parent="." unique_id=543797333]
+[node name="PlayerAnimations" type="Node2D" parent="." unique_id=543797333 node_paths=PackedStringArray("anim_tree")]
 script = ExtResource("3_gmlin")
+anim_tree = NodePath("../AnimationTree")
